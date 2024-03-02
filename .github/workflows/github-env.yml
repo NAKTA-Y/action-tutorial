@@ -1,0 +1,23 @@
+name: github-checkout
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+    - uses: actions/checkout@v2
+
+    - name: context
+      env:
+        COMMIT_ID: ${{ github.sha }}
+      run:
+        echo "Commit Id => COMMIT_ID"
