@@ -19,4 +19,4 @@ jobs:
       env:
         COMMIT_ID: ${{ github.sha }}
       run:
-        echo "Commit Id => COMMIT_ID"
+        echo "Commit Id => $COMMIT_ID"
