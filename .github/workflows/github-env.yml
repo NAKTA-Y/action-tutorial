@@ -1,4 +1,4 @@
-name: github-checkout
+name: github-env
 
 on:
   push:
@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout
     - uses: actions/checkout@v2
 
     - name: context
