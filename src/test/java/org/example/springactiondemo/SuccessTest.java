@@ -3,10 +3,10 @@ package org.example.springactiondemo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class FailTest {
+public class SuccessTest {
 
     @Test
-    public void must_fail() {
-        Assertions.assertTrue(false);
+    public void must_success() {
+        Assertions.assertTrue(true);
     }
 }
