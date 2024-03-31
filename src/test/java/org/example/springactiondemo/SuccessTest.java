@@ -9,4 +9,9 @@ public class SuccessTest {
     public void must_success() {
         Assertions.assertTrue(true);
     }
+
+    @Test
+    void must_fail() {
+        Assertions.assertTrue(false);
+    }
 }
